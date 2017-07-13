@@ -39,12 +39,12 @@ else if (document.getElementById("year").attachEvent)
 	};
 	
 	messageVar.addEventListener('change', checkMessageValidity, false);
-	document.getElementById('content').addEventListener('keydown', function (e){
+/*	messageVar.getElementById('content').addEventListener('keydown', function (e){
 		messageVar.setCustomValidity('');
 		messageVar.blur();
 		messageVar.focus();
 	}, false);
-	
+*/
 	form.addEventListener('submit', function() {
 		checkMessageValidity();
 	    if (!this.checkValidity()) {
@@ -54,13 +54,3 @@ else if (document.getElementById("year").attachEvent)
 	    }
 	}, false);
 }());
-
-
-/*			    	document.getElementById("message").validity.valueMissing = true;
-	document.getElementById("message").validationMessage;
-	document.getElementById("message").checkValidity();
-	return false;*/
-
-
-
-/*});*/
