@@ -39,7 +39,7 @@ else if (document.getElementById("year").attachEvent)
 	};
 	
 	messageVar.addEventListener('change', checkMessageValidity, false);
-	messageVar.getElementById('content').addEventListener('keydown', function (e){
+	document.getElementById('content').addEventListener('keydown', function (e){
 		messageVar.setCustomValidity('');
 		messageVar.blur();
 		messageVar.focus();
