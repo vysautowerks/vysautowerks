@@ -44,7 +44,7 @@ else if (document.getElementById("year").attachEvent)
 		messageVar.blur();
 		messageVar.focus();
 	}, false);
-*/
+
 	form.addEventListener('submit', function() {
 		checkMessageValidity();
 	    if (!this.checkValidity()) {
@@ -53,4 +53,5 @@ else if (document.getElementById("year").attachEvent)
 	        messageVar.focus();
 	    }
 	}, false);
+*/
 }());
